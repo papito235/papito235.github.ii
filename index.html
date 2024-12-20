@@ -1,0 +1,189 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundación Olivo - Ayudar a los Necesitados 
+
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap; /* Permite que los enlaces se acomoden si la pantalla es pequeña */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1; /* Los enlaces ocupan el mismo espacio en pantallas más pequeñas */
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about, .mission, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap; /* Para que los videos se acomoden en pantallas más pequeñas */
+            gap: 2%;
+        }
+        .video-container iframe {
+            width: 48%;
+            margin-bottom: 20px;
+            height: 315px; /* Ajustamos la altura para mantener la relación de aspecto */
+        }
+
+        /* Consultas de medios para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .video-container iframe {
+                width: 100%; /* Los videos ocupan todo el ancho en pantallas más pequeñas */
+                height: 200px; /* Reducimos la altura de los videos en pantallas pequeñas */
+            }
+            .gallery img {
+                width: 100%; /* Las imágenes ocupan todo el ancho en pantallas más pequeñas */
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .about, .mission, .gallery, .contact {
+                margin-bottom: 20px;
+            }
+            nav {
+                flex-direction: column; /* Los enlaces de navegación se apilan en pantallas muy pequeñas */
+            }
+            nav a {
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fundación Olivo</h1>
+    <h1><em>"Ayudar a los necesitados es nuestro lema"</em></h1>
+<p>RNC:430-10706-9</p> <p>Calle respaldo 32 esquina 41 num.18 cristo Rey D.N.Dom</p>
+  </header>
+
+<nav>
+  <img src="./img/erbt.png" alt="" width="50px" height="50px">  
+  <a href="#about">Sobre Nosotros</a>
+    <a href="#mission">Nuestra Misión</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+<img src="img/32.png" alt="" width="50px" height="50px">
+  </nav>
+
+<div class="container">
+  
+  <h3>NUESTRO FUNDADOR</h3>
+  <p>José Ramón Olivo nació en el año 1970 en el populoso sector capitalino de Cristo Rey, en Santo Domingo, República Dominicana. Desde su niñez, mostró una profunda preocupación por las personas más necesitadas de su comunidad. A lo largo de su vida, José Ramón desarrolló un fuerte sentido de solidaridad y un compromiso con las causas sociales, lo que lo llevó a dedicarse al servicio de los demás.
+    Con el paso de los años, fundó la Fundación Olivo, una organización sin fines de lucro cuyo objetivo principal es ofrecer apoyo a personas en situaciones de vulnerabilidad. Su visión ha sido siempre mejorar las condiciones de vida de los más desfavorecidos, brindando ayuda en áreas como la alimentación, la salud y la educación.
+
+
+  </p>
+  
+  <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>La Fundación Olivo nació con el propósito de ofrecer ayuda a las personas en situación de vulnerabilidad. Nos dedicamos a proporcionar recursos esenciales como comida, ropa, atención médica y educación a quienes más lo necesitan.</p>
+        <img src="img/pepe.jpeg" alt="Fundación Olivo" style="width:100%; height:auto;">
+    </section>
+
+    <section id="mission" class="mission">
+        <h2>Nuestra Misión</h2>
+        <p>En Fundación Olivo trabajamos incansablemente para llevar esperanza a quienes se encuentran en situaciones de pobreza extrema. Creemos que cada persona tiene derecho a una vida digna, y es por eso que nos esforzamos por brindar apoyo y acompañamiento a las comunidades más necesitadas.</p>
+        La Fundación Olivo tiene como misión principal ofrecer apoyo integral a las personas en situación de vulnerabilidad. Con el lema "Ayudar a los necesitados es nuestro lema", la fundación trabaja para mejorar la calidad de vida de aquellos que más lo requieren, brindando recursos esenciales como comida, ropa, atención médica y acceso a educación. Su objetivo es promover la dignidad humana, la solidaridad y el bienestar, creando un impacto positivo en las comunidades más desfavorecidas. A través de su trabajo incansable, la Fundación Olivo busca ser un faro de esperanza para quienes enfrentan las adversidades de la vida.
+
+
+
+
+
+
+
+      </section>
+
+    
+        <h3>Fotos de nuestras actividades</h3>
+        <img src="img/iopm.jpeg" alt="Evento 1" style="width:48%; margin-right: 2%; height: auto;">
+        <img src="img/bobo.jpeg" alt="Evento 2" style="width:48%; height: auto;">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p>Para obtener más información sobre nuestras actividades o si deseas colaborar con nosotros, no dudes en contactarnos:</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Fundación Olivo | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

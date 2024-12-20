@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundación Olivo - Ayudar a los Necesitados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap; /* Permite que los enlaces se acomoden si la pantalla es pequeña */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1; /* Los enlaces ocupan el mismo espacio en pantallas más pequeñas */
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about, .mission, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Para que los videos se acomoden en pantallas más pequeñas */
+        }
+        .video-container iframe {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        
+        /* Consultas de medios para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .video-container iframe {
+                width: 100%;
+            }
+            .gallery img {
+                width: 100%;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .about, .mission, .gallery, .contact {
+                margin-bottom: 20px;
+            }
+            nav {
+                flex-direction: column; /* Los enlaces de navegación se apilan en pantallas muy pequeñas */
+            }
+            nav a {
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fundación Olivo</h1>
+    <p><em>"Ayudar a los necesitados es nuestro lema"</em></p>
+</header>
+
+<nav>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#mission">Nuestra Misión</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="container">
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>La Fundación Olivo nació con el propósito de ofrecer ayuda a las personas en situación de vulnerabilidad. Nos dedicamos a proporcionar recursos esenciales como comida, ropa, atención médica y educación a quienes más lo necesitan.</p>
+        <img src="about-image.jpg" alt="Fundación Olivo" style="width:100%; height:auto;">
+    </section>
+
+    <section id="mission" class="mission">
+        <h2>Nuestra Misión</h2>
+        <p>En Fundación Olivo trabajamos incansablemente para llevar esperanza a quienes se encuentran en situaciones de pobreza extrema. Creemos que cada persona tiene derecho a una vida digna, y es por eso que nos esforzamos por brindar apoyo y acompañamiento a las comunidades más necesitadas.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/example-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3>Fotos de nuestras actividades</h3>
+        <img src="im" alt="Evento 1" style="width:48%; margin-right: 2%;">
+        <img src="event2.jpg" alt="Evento 2" style="width:48%;">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p>Para obtener más información sobre nuestras actividades o si deseas colaborar con nosotros, no dudes en contactarnos:</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Fundación Olivo | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
